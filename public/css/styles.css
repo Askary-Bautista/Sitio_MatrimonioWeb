@@ -1,0 +1,1060 @@
+body {
+    margin: 0;
+
+}
+
+/* Estilos Nav Index */
+.nav-hor-index {
+    background-color: #a88226;
+    padding: 5px;
+    justify-content: center;
+}
+
+.nav-hor-index ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-hor-index li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-hor-index li a:hover {
+    color: #decf66;
+}
+
+.nav-hor-index li a {
+    text-decoration: none;
+}
+
+.layout-nav-hor {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 0fr;
+    gap: 1px;
+}
+
+.box-nav-1 {
+    /* border: 5px solid red; */
+    width: auto;
+    display: flex;
+    gap: 30px;
+
+}
+
+.box-nav-2 {
+    /* border: 5px solid red; */
+    width: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-a-index {
+    color: #faf9ec;
+    font-size: 22px;
+}
+
+#ul-dropdown {
+    background-color: #eae39e;
+    border-radius: 15px;
+}
+
+
+#ul-dropdown li a {
+    color: #000;
+}
+
+/* .dropdown-toggle{
+    text-decoration: none;
+} */
+
+/* ESTILOS WELCOME (VISTA INDEX) */
+
+section .box-content-general-welcome {
+
+    width: 100%;
+    height: 710px;
+    background-image: url("../assets/images/img-fondo-boda.png");
+    background-size: cover;
+    display: flex;
+}
+
+
+.box-content-welcome {
+
+    border-radius: 18px;
+    width: 100%;
+    height: max-content;
+
+    background-image: linear-gradient(to bottom,
+            rgba(168, 130, 38, 0.7),
+            /* #a88226 con opacidad del 50% */
+            rgba(168, 130, 38, 0.2));
+
+    padding: 15px;
+    text-align: center;
+    /* Alinea el texto al centro */
+    max-width: 600px;
+    /* Ancho máximo para evitar que el contenido se expanda demasiado */
+    margin: auto;
+    /* Centra horizontalmente dentro del contenedor */
+
+}
+
+.cotent-welcome {
+    color: #f4f2cd;
+    font-size: 28px;
+}
+
+/*ESTILOS VISTA JOIN*/
+.section-vista-join {
+    background-image: url('../assets/images/img-fondo-boda.png');
+    background-size: cover;
+    height: 1500px;
+}
+
+/* Contenedor principal */
+.box-content-general-join {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+
+    margin: 0 auto;
+}
+
+/* estilos de caja imagen y boton iniciar y registrar */
+#box-content-imagen-boda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#join-content-type-form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.form-login {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/* Subcontenedor */
+.box-content-sub-join {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    height: 280px;
+    width: 560px;
+    background-image: linear-gradient(to bottom, rgba(253, 231, 180, 0.9), rgba(168, 130, 38, 0.2));
+    padding: 10px;
+    border-radius: 15;
+}
+
+/* Contenedor de botones */
+.box-content-opc {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Botones */
+.box-content-opc button {
+    border-radius: 5px;
+    background-color: #decf66;
+    border: none;
+    padding: 10px;
+}
+
+.box-content-opc button:hover {
+    background-color: #a88226;
+}
+
+/* Contenedor de formularios */
+#box-content-formularios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Formularios */
+.content-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.content-form .box-form-opc-register {
+    width: 250px;
+}
+
+.content-form .box-form-opc-register label {
+    color: #3a220e;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botones de submit */
+.btn-submit-signUp,
+.btn-submit-signIn {
+    background-color: #c3a52f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-submit-signUp:hover,
+.btn-submit-signIn:hover {
+    background-color: #0069d9;
+}
+
+.btn-submit-signUp:disabled,
+.btn-submit-signIn:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+/* Select */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px #007bff;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+option {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+option:hover {
+    background-color: #f0f0f0;
+}
+
+option:focus {
+    background-color: #e0e0e0;
+}
+
+option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+
+option:disabled {
+    background-color: #ddd;
+    color: #999;
+}
+
+/* Contenedor de términos y condiciones */
+.terms-general {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+#terms-input input {
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+#terms-label {
+    font-size: 16px;
+    color: #333;
+}
+
+#terms-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+#terms-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos adicionales */
+.box-general-campos-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: #eae39e;
+
+}
+
+@media (max-width: 768px) {
+    .box-general-campos-form {
+        grid-template-columns: 1fr;
+    }
+
+    .box-content-opc {
+        grid-template-columns: 1fr;
+    }
+
+    .box-content-sub-join {
+        width: 100%;
+    }
+}
+
+/* ESTILOS VISTA PERSONAS */
+
+/* Estilos caption de la tabla */
+
+.box-caption-container {
+    /* border: 3px solid rgb(6, 255, 47); */
+    width: 300px;
+    margin: 0 auto;
+}
+
+.caption-content {
+    /* border: 3px solid red; */
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.caption-content h1 {
+    /* border: 3px solid rgb(0, 255, 242); */
+    width: max-content;
+}
+
+.caption-content div {
+    display: block;
+    /* border: 3px solid rgb(255, 0, 200); */
+    width: max-content;
+}
+
+
+
+/* Estilos para el contador de filas */
+
+
+.table-row-count {
+    margin-left: 10px;
+    /* Espacio entre el texto "Personas" y el contador de filas */
+    color: #614222;
+    /* Color de texto para el contador de filas */
+}
+
+/* ESTILOS TABLA PERSONAS*/
+
+.section-table-personas {
+    padding: 20px;
+    background-image: url('../assets/images/img-fondo-boda.png');
+    background-size: cover;
+}
+
+.table-widget {
+    max-width: 100%;
+    max-height: 480px;
+    /* Define una altura máxima para el contenedor de la tabla */
+    overflow-y: scroll;
+    /* Agrega desplazamiento vertical */
+    margin-bottom: 20px;
+}
+
+.table-widget tbody tr {
+    text-align: center;
+    background-image: radial-gradient(circle, #fefefe 99%, rgba(238, 228, 98, 0.9) 100%);
+}
+
+.table-widget table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 540px;
+}
+
+
+
+.table-widget thead {
+    text-align: center;
+    background-color: #decf66;
+    color: #382210;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.table-widget th,
+.table-widget td {
+    padding: 10px;
+    border: 1px solid #ddd;
+
+}
+
+.table-widget tfoot {
+    background-color: #f4f2cd;
+    border-top: 1px solid #ddd;
+}
+
+.table-widget .pagination {
+    margin-top: 10px;
+}
+
+.table-widget tbody tr {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    height: auto;
+}
+
+
+.table-widget tbody tr:hover {
+    background-image: linear-gradient(45deg, #eae39e 98%, rgba(247, 245, 207, 0.9) 100%);
+}
+
+
+.table-widget table {
+
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+
+    /* Para ocultar los bordes redondeados dentro de la tabla */
+}
+
+.table-widget tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.table-widget {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* ESTILOS FORM (MODIFICAR Y ELIMINAR) */
+#box-general-form-personas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-tabla-personas {
+    border-radius: 50%;
+}
+
+.box-buttons-acciones a {
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.box-buttons-acciones button {
+    height: 37px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.box-buttons-acciones a:hover {
+    background-color: #1100ff;
+}
+
+.box-buttons-acciones button:hover {
+    background-color: #ff0000;
+}
+
+
+
+/* ESTILOS FOOTER DE LA TABLA */
+.tfoot-table {
+    background-color: #f9f9f9;
+}
+
+.tr-tfoot-table {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.pagination li a,
+.pagination li span {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #876021;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*ESTILOS VISTA EDIT*/
+.box-content-edit {
+    width: 100%;
+    height: auto;
+    background-image: url("../assets/images/img-fondo-boda.png");
+    background-size: cover;
+    padding: 20px;
+}
+
+.box-content-edit #box-title-form-edit {
+    color: #3a220e;
+    padding: 5px;
+}
+
+#box-title-form-edit h1 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.content-form-edit {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(253, 231, 180, 0.9), rgba(168, 130, 38, 0.2));
+    background-size: cover;
+
+
+}
+
+.form-edit-register {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+}
+
+.box-form-opc-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+.box-form-opc-edit-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+#form-correo-nombre {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.box-form-correoElectronico {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+#form-correo-electronico {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#form-correo-img-boda {
+    background-image: url("../assets/images/img-anillos.jpeg");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+.box-form-edit-pass {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#box-form-edit-confirm-pass {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#link-cancelar {
+    text-decoration: none;
+    color: #fcfbee;
+}
+
+#box-edit-input-password::placeholder {
+    font-size: 10px;
+}
+
+#box-content-buttons {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        overflow: scroll;
+    }
+
+    .box-form-opc-edit,
+    .box-form-opc-edit-1,
+    .box-form-edit-pass {
+        grid-template-columns: 1fr;
+    }
+
+    .box-form-correoElectronico {
+        grid-template-columns: 1fr;
+    }
+
+    #box-content-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .box-content-edit {
+        height: auto;
+    }
+}
+
+/* ESTILOS VISTA CASAMIENTO */
+
+.section-casar-personas {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../assets/images/img-fondo-boda.png");
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#box-general-casar-personas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+#box-content-general-casar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+}
+
+.box-casar-personas-1,
+.box-casar-personas-2 {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#box-content-casar-datos-1,
+#box-content-casar-datos-2 {
+    margin-top: 10px;
+}
+
+.box-casar-personas-1,
+.box-casar-personas-2,
+.box-casar-personas-3 {
+    background-image: linear-gradient(to bottom, rgba(253, 231, 180, 0.9), rgba(168, 130, 38, 0.2));
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#confirmarMatrimonioForm {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+form .box-form-imputs-casamiento {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+#box-idPersona1,
+#box-idPersona2 {
+    width: min-content;
+}
+
+@media (max-width: 768px) {
+    #box-content-general-casar {
+        flex-direction: column;
+    }
+
+    .box-casar-personas-1,
+    .box-casar-personas-2,
+    .box-casar-personas-3 {
+        padding: 10px;
+    }
+
+    form .box-form-imputs-casamiento {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #box-idPersona1,
+    #box-idPersona2 {
+        width: 100%;
+    }
+
+    #box-general-casar-personas {
+        grid-template-columns: 1fr;
+    }
+
+    .box-casar-personas-1,
+    .box-casar-personas-2 {
+        grid-column: span 1;
+    }
+
+    .box-casar-personas-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .box-casar-personas-1,
+    .box-casar-personas-2 {
+        grid-column: span 2;
+    }
+
+    .box-casar-personas-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ESTILOS SECCION BUSCAR */
+
+#box-buscar-personas {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/* ESTILOS CAJA DATOS PERSONA (VISTA CASAMIENTO) */
+
+
+.persona-result-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.persona-result-image img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.persona-result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTILOS VISTA MATRIMONIOS */
+
+
+#box-img-matrimonios {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+
+/* ESTILOS TABLA */
+
+.caption-content {
+    width: max-content;
+    margin: 0 auto;
+}
+
+/* Estilos generales para la sección de la tabla */
+.section-table-personas-matrimonios .table-widget {
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: wheat;
+}
+
+/* Estilos de la tabla */
+.section-table-personas-matrimonios table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+    /* Asegura que la tabla mantenga un ancho mínimo */
+    background-image: linear-gradient(to bottom, rgba(253, 231, 180, 0.9), rgba(168, 130, 38, 0.2));
+
+
+}
+
+
+.section-table-personas-matrimonios thead th {
+
+    color: #fff;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.section-table-personas-matrimonios tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.section-table-personas-matrimonios tbody tr:hover {
+    background-color: #0f5ba7;
+}
+
+.section-table-personas-matrimonios td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #642424;
+}
+
+#box-content-btns-matri {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/* Estilos para las imágenes y nombres en la columna MATRIMONIO */
+.img-tabla-personas {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    /* Esta propiedad asegura que las imágenes se recorten para llenar el área definida */
+    border-radius: 50%;
+    /* Esto hará que las imágenes sean redondeadas */
+}
+
+.section-table-personas-matrimonios #box-img-matrimonios {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.section-table-personas-matrimonios #box-img-matrimonios div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.section-table-personas-matrimonios .img-tabla-personas {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilos del pie de tabla */
+.section-table-personas-matrimonios .tfoot-table {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+}
+
+.section-table-personas-matrimonios .tfoot-table .pagination {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Estilos de botones */
+.section-table-personas-matrimonios button a {
+    color: #cde0b3;
+    text-decoration: none;
+}
+
+.section-table-personas-matrimonios button {
+    background-color: #fff;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.section-table-personas-matrimonios button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos del contenedor de encabezado */
+.section-table-personas-matrimonios .box-caption-container {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.section-table-personas-matrimonios .caption-content h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.section-table-personas-matrimonios .table-row-count h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .section-table-personas-matrimonios table {
+        min-width: 100%;
+    }
+
+    .section-table-personas-matrimonios #box-img-matrimonios {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ESTILOS MODAL INVITACION */
+.modal {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-image: url('../assets/images/fondo-invitacion-boda.jpeg');
+    background-size: cover;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ESTILOS VISTA INVITACION */
+.content-general-inv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+#box-col1-inv div h1,
+#box-col1-inv div h2,
+#box-col1-inv div h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3b230d;
+}
+
+#box-img-anillos-inv {
+    background-image: url('../assets/images/par-de-anillos.jpg');
+    background-size: cover;
+}
+
+#box-col2-inv {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#box-col2-inv #box-content-personas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+#box-name-persona1-inv,
+#box-and-inv,
+#box-name-persona2-inv,
+#box-parrafo2-der-inv {
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3b230d;
+    font-size: 18px;
+}
+
+#box-parrafo2-der-inv {
+    text-align: center;
+}
+
+/* ESTILOS VISTA REGISTRAR PERSONA POR PARTE DEL ADMINISTRADOR*/
+#section-registratPersona {
+    background-image: url('../assets/images/img-fondo-boda.png');
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+
+}
